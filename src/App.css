@@ -35,3 +35,39 @@ body {
   background-color: var(--coffee-brown);
   color: white;
   min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.shop {
+  display: flex;
+  background-color: var(--coffee-brown);
+  color: white;
+  min-height: 60vh;
+}
+
+.shop-sidebar {
+  background-color: var(--coffee-dark);
+  padding: 1.5rem;
+  min-width: 150px;
+}
+
+.shop-sidebar input {
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+}
+
+.product-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns:
