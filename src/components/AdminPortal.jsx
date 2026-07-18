@@ -54,7 +54,6 @@ function AdminPortal() {
           placeholder="Typing..."
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          required
         />
 
         <label htmlFor={originId}>Origin</label>
@@ -64,7 +63,6 @@ function AdminPortal() {
           placeholder="Typing..."
           value={origin}
           onChange={(e) => setOrigin(e.target.value)}
-          required
         />
 
         <label htmlFor={priceId}>Price</label>

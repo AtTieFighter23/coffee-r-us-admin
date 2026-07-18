@@ -19,6 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  gap: 2rem;
 }
 
 .navbar a {
@@ -70,4 +71,89 @@ body {
 .product-grid {
   list-style: none;
   display: grid;
-  grid-template-columns:
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+  flex: 1;
+  margin: 0;
+}
+
+.product-card {
+  background-color: var(--coffee-light);
+  color: var(--coffee-dark);
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.product-card h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.product-card p {
+  margin: 0.3rem 0;
+}
+
+.product-card a {
+  color: var(--coffee-dark);
+  text-decoration: none;
+}
+
+.admin-portal {
+  background-color: var(--coffee-brown);
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-form {
+  background-color: var(--coffee-light);
+  color: var(--coffee-dark);
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 300px;
+}
+
+.admin-form input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.admin-form button {
+  margin-top: 1rem;
+  background-color: #7a2e2e;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-detail {
+  background-color: var(--coffee-brown);
+  color: white;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.product-detail button {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--coffee-light);
+  color: var(--coffee-dark);
+}
+
+.product-detail a {
+  color: white;
+  display: block;
+  margin-top: 1rem;
+}
